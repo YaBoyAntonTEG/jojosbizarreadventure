@@ -1,0 +1,138 @@
+/* specifikationer kring bakgroundsbild och
+hur den ska sitta*/
+body {
+  background-color: #d1315d;
+  background-image: url("https://images.wallpapersden.com/image/download/jojo-s-bizarre-adventure-stardust-crusaders_a2tobG6UmZqaraWkpJRnbW1lrWZtZWU.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* specifikationer till mobil menyn och hur den ska se ut*/
+#navbar {
+  display: grid;
+  min-height: 100px;
+  grid-auto-flow: column;
+  background-color: #d1315d;
+  grid-gap: 1.5em;
+  padding: 0 40px;
+  -webkit-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  -moz-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+}
+
+#logo {
+  display: grid;
+  justify-content: start;
+  align-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.logo span {
+  color: rgb(232, 219, 43);
+}
+
+/*länk specifikationer*/
+#links {
+  display: grid;
+  justify-content: right;
+  align-content: center;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(16, 113, 129);
+}
+/*mobil menyn stylas separat*/
+.mobile-menu {
+  display: block;
+  list-style-type: none;
+  background-color: #c61344;
+  float: right;
+  width: 150px;
+  padding: 5px 0 50px 0;
+  border: 1px solid #c61344;
+  z-index: 55;
+}
+
+.mobile-links li {
+  line-height: 2.8rem;
+}
+
+.mobile-btn {
+  display: grid;
+  justify-content: right;
+  align-content: center;
+  grid-auto-flow: column;
+  cursor: pointer;
+}
+
+.nav-list {
+  font-family: "Open Sans", sans-serif;
+  list-style-type: none;
+}
+
+.nav-list:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* Mobil till surfplatta  */
+@media (min-width: 320px) and (max-width: 767px) {
+  #links,
+  .mobile-menu {
+    display: none;
+  }
+}
+
+/*Surfplatta till Dator*/
+@media (min-width: 768px) {
+  .mobile-menu,
+  .mobile-btn,
+  .fa-bars {
+    display: none;
+  }
+}
+/*all kod som säger att namnet ska vara 100% witdh är för
+att bilden ska ta up hela sin grid */
+.jonathan1 {
+  width: 100%;
+}
+
+.joseph1 {
+  width: 100%;
+}
+
+.jotaro1 {
+  width: 100%;
+}
+
+.josuke1 {
+  width: 100%;
+}
+
+.giorno1 {
+  width: 100%;
+}
+
+.jolyne1 {
+  width: 100%;
+}
+
+.speedwagon1 {
+  width: 100%;
+}
+
+.ceasar1 {
+  width: 100%;
+}

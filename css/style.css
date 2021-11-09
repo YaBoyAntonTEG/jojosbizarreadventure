@@ -1,0 +1,173 @@
+/* specifikationer kring bakgroundsbild och
+hur den ska sitta*/
+body {
+ background-color: yellow;
+ background-image: url("https://www.gojinshi.com/wp-content/uploads/2019/10/JoJo-no-Kimyou-na-Bouken-JoJos-Bizarre-Adventure-Watch-Order-Guide.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+}
+
+/*plats för header-bild*/
+.bild {
+  width: 100%;
+  height: auto;
+  padding-top: 30px;
+  padding-right: 20px
+}
+/* styling för artikel 1 (p1) */
+.p1 {
+  text-align: left;
+  border-radius: 10px;
+  text-align: left;
+  background-color: yellow;
+  width: 100%;
+  font-family: sans-serif, verdana;
+}
+
+/*enkel styling till diverse element*/
+
+.h21 {
+  font-size: 30px;
+}
+
+.p2 {
+  padding: 5px;
+}
+
+.backtotop {
+  text-align: center;
+}
+
+.p3 {
+  padding: 5px;
+}
+
+.Jonathan {
+  width: 100%
+}
+
+.bild {
+  width: 100%
+}
+
+.Joseph {
+  width: 100%
+}
+
+.Jotaro {
+  width: 100%
+}
+
+/*styling för artikel 2 (art1) */
+
+.art1 {
+  text-align: left;
+  border-radius: 10px;
+  text-align: left;
+  background-color: yellow;
+  width: 100%;
+  font-family: sans-serif, verdana;
+}
+
+/* Meny styling*/
+/*position för menyn*/
+#navbar {
+  display: grid;
+  min-height: 100px;
+  grid-auto-flow: column;
+  background-color: yellow;
+  grid-gap: 1.5em;
+  padding: 0 40px;
+  -webkit-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  -moz-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+}
+/*större delen av loggans styling*/
+#logo {
+  display: grid;
+  justify-content: start;
+  align-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+}
+/*färgen på den färgade delen av loggan i hörnet*/
+.logo span {
+  color: rgb(235, 86, 220);
+}
+/*länk specifikationer*/
+#links {
+  display: grid;
+  justify-content: right;
+  align-content: center;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(193, 25, 196);
+}
+
+a:hover {
+  color: rgb(219, 212, 30);
+}
+/*mobil menyn stylas separat*/
+.mobile-menu {
+  display: block;
+  list-style-type: none;
+  background-color: rgb(228, 226, 16);
+  float: right;
+  width: 150px;
+  padding: 5px 0 50px 0;
+  border: 1px solid rgb(228, 226, 16);
+  z-index: 55;
+}
+/*mobil meny länkar*/
+.mobile-links li {
+  line-height: 2.8rem;
+}
+/*styling för mobil many knappen*/
+.mobile-btn {
+  display: grid;
+  justify-content: right;
+  align-content: center;
+  grid-auto-flow: column;
+  cursor: pointer;
+}
+
+.nav-list {
+  font-family: "Open Sans", sans-serif;
+  list-style-type: none;
+}
+
+.nav-list:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* Mobil till surfplatta  */
+@media (min-width: 320px) and (max-width: 767px) {
+  #links,
+  .mobile-menu {
+    display: none;
+  }
+  /* bilden blir extremt liten när mobil menyn aktiveras
+  så jag gjorde den osynlig på mobil*/
+  .bild {
+    visibility: hidden;
+  }
+}
+
+/* surfplatta till dator */
+@media (min-width: 768px) {
+  .mobile-menu,
+  .mobile-btn,
+  .fa-bars {
+    display: none;
+  }
+}
